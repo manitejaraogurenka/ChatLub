@@ -1,0 +1,35 @@
+.glass {
+    background: rgba(255, 255, 255, 0.258);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #4747470b;
+    backdrop-filter: blur(7.1px);
+    border: 2px solid rgba(255, 255, 255, 0.329);
+}
+
+.textbox {
+    @apply w-full py-3 px-4 rounded-xl shadow-md text-lg;
+    @apply focus:outline-none;
+}
+
+.label{
+    @apply text-black text-base font-semibold p-1
+}
+
+.profile_img {
+    @apply border-4 border-white w-[95px] h-[95px] rounded-full shadow-xl m-0 p-0 select-none cursor-pointer;
+    @apply hover:border-gray-200;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+    
+.spin {
+    animation: spin 3s linear infinite;
+}

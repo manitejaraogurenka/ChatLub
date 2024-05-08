@@ -1,0 +1,55 @@
+.chatBg {
+    background-image: url('../../public/assets/backgrounds/ChatLight_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @apply min-h-screen w-full
+}
+
+.chatGlass{
+        background: rgba(255, 255, 255, 0.258);
+        box-shadow: 0 4px 30px #4747470b;
+        backdrop-filter: blur(7.5px);
+        border: 2px solid rgba(255, 255, 255, 0.329);
+}
+
+.chatBarGlass {
+    background: rgba(255, 255, 255, 0.258);
+    box-shadow: 0 4px 30px #4747470b;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.329);
+}
+
+.usersGlass {
+    background: rgba(255, 255, 255, 0.258);
+    box-shadow: 0 4px 30px #4747470b;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.329);
+}
+
+.modalGlass {
+    background: rgba(255, 255, 255, 0.258);
+    box-shadow: 0 4px 30px #4747470b;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.329);
+}
+.chatTopGlass {
+    box-shadow: 0 4px 30px #4747470b;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+}
+
+.messages{
+    scrollbar-width: 2px;
+}
+
+.sideBarIcons{
+    @apply my-3 hover:border-white border-[3px] p-1 rounded-lg hover:scale-110 border-transparent cursor-pointer
+}
+
+.sideBarProfile + .sideBarIcons:hover:not(:hover) {
+    @apply scale-100;
+}
+
+.sideBarProfile{
+    @apply my-3 hover:border-white border-[3px] p-1 rounded-lg hover:scale-110 border-transparent cursor-pointer
+}
